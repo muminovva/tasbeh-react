@@ -8,13 +8,15 @@ function App() {
   if (count > 99) {
     return setCount(0)
   }
-  
   function playw() {
     setCount(count + 1)
     new Audio(audio).play()
   }
-  function resert() {
-    setCount(0)
+
+  function name() {
+    if(window.confirm("Are you sure") == true){
+      setCount(0)
+    }
   }
   return (
     <>
@@ -27,7 +29,7 @@ function App() {
 
         <div className='fd'>
           <button className='btn' onClick={() => playw()} >Add</button>
-          <button id='but' className='btn ' onClick={() => (resert)}>Resert</button>
+          <button id='but' className='btn ' onClick={() => name()}>Resert</button>
 
         </div>
 
