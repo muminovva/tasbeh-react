@@ -1,16 +1,25 @@
 .btn1{
-  padding: 50px;
-  font-size: 50px;
+  padding: 60px;
+  font-size: 40px;
   border-radius: 50%;
   width: 200px;
+  padding-left: 50px;
   height: 200px;
-  border: none;
-  background: rgb(238,174,202);
-background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(224,176,207,1) 5%, rgba(148,187,233,1) 45%);
+  border:5px solid rgb(160, 159, 159);
+  margin-top: 200px;
+  background: transparent;
+  color: beige;
+ 
 }
 .big{
   display: flex;
+  position: relative;
   justify-content: center;
+}
+.h6{
+  position: absolute;
+  top: 270px;
+  right: 720px;
 }
 .fd{
   text-align: center;
@@ -18,8 +27,51 @@ background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(224,176,207,1) 
 .btn{
   margin-top: 20px;
   border: none;
-  background-color: green;
+  background-color: rgb(182, 186, 182);
   padding: 20px 30px;
-  border-radius: 20px;
+  color: white;
+  border-radius: 20px 0px;
   font-size: 20px;
+  margin-left: 10px;
+}
+.btn:active{
+  font-size: 22px;
+}
+.btn:focus{
+  background: transparent;
+  border:2px solid rgb(184, 182, 180);
+}
+header{
+  background: url(./img/788469.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 600px;
+}
+@media (max-width:575px) {
+  .btn {
+    margin-top: 20px;
+    border: none;
+    background-color: rgb(182, 186, 182);
+    padding: 20px 30px;
+    color: white;
+    border-radius: 20px 0px;
+    font-size: 20px;
+    margin-right: 10px;
+}
+#but{
+  margin-right: 40px;
+}
+.btn1 {
+  padding: 60px;
+  font-size: 40px;
+  border-radius: 50%;
+  width: 200px;
+  padding-left: 50px;
+  height: 200px;
+  border: 5px solid rgb(160, 159, 159);
+  margin-top: 200px;
+  background: transparent;
+  color: beige;
+  margin-right: 20px;
+}
 }
